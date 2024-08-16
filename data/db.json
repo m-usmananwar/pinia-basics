@@ -1,0 +1,19 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "title": "Learn Laravel From Laravel Docs",
+      "isFav": false
+    },
+    {
+      "id": "2",
+      "title": "Learn Vue From Laracasts Website",
+      "isFav": true
+    },
+    {
+      "id": "3",
+      "title": "Learn Pinia From The Net Ninja",
+      "isFav": false
+    }
+  ]
+}

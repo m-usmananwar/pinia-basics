@@ -1,0 +1,44 @@
+Install Tailwind CSS via npm
+    npm install -D tailwindcss postcss autoprefixer
+
+Generate the Tailwind Configuration Files
+    npx tailwindcss init -p
+Configure Tailwind
+    // tailwind.config.js
+    module.exports = {
+    content: [
+        "./index.html",
+        "./src/**/*.{vue,js,ts,jsx,tsx}",
+    ],
+    theme: {
+        extend: {},
+    },
+    plugins: [],
+    }
+
+Include Tailwind in Your CSS
+    /* src/assets/main.css */
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+    
+Add Fonts
+    npm install @fontsource/montserrat
+Import Montserrat in Your Project
+    //src/main.js
+    import '@fontsource/montserrat'; // Import Montserrat font
+
+Update Tailwind Config
+    theme: {
+    extend: {
+      fontFamily: {
+        montserrat: ['Montserrat', 'sans-serif'], // Set Montserrat as the default sans-serif font
+      },
+    },
+  },
+
+Apply Montserrat Font Globally
+    /* src/assets/main.css */
+    body {
+        @apply font-montserrat;
+    }
